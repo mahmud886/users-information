@@ -1,12 +1,14 @@
 import React,{useState} from 'react';
 import './Employee.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserPlus, faUserMinus } from '@fortawesome/free-solid-svg-icons'
 const Employee = (props) => {
     const {name,photo,username,designation,salary,email,address} = props.employee;
     const [isPaid, setIsPaid] = useState(false);
-    let paymentButton = <button onClick={() => {props.addToAccounts(props.employee); setIsPaid(true)} } className="pay-btn"> ADD SALARY</button>
+    let paymentButton = <button onClick={() => {props.addToAccounts(props.employee); setIsPaid(true)} } className="pay-btn"><FontAwesomeIcon icon={faUserPlus} /> ADD SALARY</button>
     ;
     if(isPaid){
-        paymentButton = <button  className="paid" > PAID SALARY</button>;
+        paymentButton = <button  className="paid" ><FontAwesomeIcon icon={faUserMinus}/> SALARY PAID</button>;
     }
     return (
         <div className="single-employee">
