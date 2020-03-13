@@ -1,7 +1,5 @@
 import React,{useState} from 'react';
 import './Employee.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faMoneyBill,faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 const Employee = (props) => {
     const {name,photo,username,designation,salary,email,address} = props.employee;
     const [isPaid, setIsPaid] = useState(false);
