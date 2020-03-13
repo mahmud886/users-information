@@ -1,0 +1,10 @@
+.accounts{
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid deeppink;
+}
+.accounts h3{
+    color: green;
+    text-transform: uppercase;
+    
+}

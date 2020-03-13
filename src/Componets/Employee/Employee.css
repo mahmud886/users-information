@@ -1,0 +1,50 @@
+.single-employee{
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px lightgray;
+    line-height: 7px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid deeppink;
+
+}
+.single-employee h3{
+    color: green;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.single-employee img{
+    margin: 40px;
+    width: 70%;
+    border-radius: 50%;
+    border: 1px solid deeppink;
+
+}
+.pay-btn{
+    padding: 10px 25px;
+    background-color: deeppink;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 1.2s;
+}
+.pay-btn:hover{
+    background-color: forestgreen;
+}
+.paid{
+    background-color: forestgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: default;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.paid:hover{
+    background-color: rebeccapurple;
+}
